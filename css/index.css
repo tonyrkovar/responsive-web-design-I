@@ -260,10 +260,18 @@ footer {
     width: 100%;
     border-bottom: 1px solid black;
     text-align: center;
-    background-color: red;
+  }
+
+  .button-container a {
+    margin-bottom: 25%;
+  }
+
+  section div {
+    margin-bottom: 5%;
   }
 
   nav {
+    width: 100%;
     display: flex;
   }
 }
