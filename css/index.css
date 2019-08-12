@@ -235,6 +235,8 @@ footer {
   margin-bottom: 5%;
 }
 
+/* mobile media queries */
+
 @media (max-width: 500px) {
   * {
     flex-direction: column;
@@ -273,5 +275,40 @@ footer {
   nav {
     width: 100%;
     display: flex;
+  }
+}
+
+/* Tablet Media Queries */
+
+@media (max-width: 800px) {
+  #wrapper {
+    width: 95%;
+  }
+
+  .header-img {
+    display: none;
+  }
+
+  .text-container div {
+    font-size: 16px;
+    margin: 0 1%;
+    /* background-color: red; */
+  }
+
+  .button-container a {
+    margin-bottom: 25%;
+  }
+
+  /* h1 {
+    margin-bottom: 5%;
+  } */
+
+  .nav-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .logo {
+    margin-bottom: 5%;
   }
 }
