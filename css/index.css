@@ -1,3 +1,337 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+#wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+/* Nav Styling */
+
+.nav-container {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 4%;
+  font-size: 16px;
+}
+nav {
+  display: flex;
+}
+
+.nav-container a {
+  padding: 20px;
+  text-decoration: none;
+  color: grey;
+  /* font-size: 12px; */
+}
+
+/* Main body styling */
+
+.text-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+}
+
+.hero-container {
+  width: 100%;
+  display: flex;
+}
+
+.middle-img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+.image-container img {
+  margin-bottom: 5%;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+address {
+  padding-top: 5%;
+  border-top: 2px solid black;
+  line-height: 1.6em;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+}
+
+.button-container a {
+  text-decoration: none;
+  color: black;
+  padding: 3%;
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+footer {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+
+/* Tablet Media Queries */
+
+@media (max-width: 800px) {
+  #wrapper {
+    width: 95%;
+  }
+
+  .header-img {
+    display: none;
+  }
+
+  .text-container div {
+    font-size: 16px;
+    margin: 0 1%;
+  }
+
+  .button-container a {
+    margin-bottom: 25%;
+  }
+
+  .nav-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-bottom: 5%;
+  }
+
+.nav-container {
+  width: 100%;
+}
+
+}
+
+
+/* mobile media queries */
+
+@media (max-width: 500px) {
+  * {
+    flex-direction: column;
+  }
+
+  #wrapper {
+    width: 90%;
+  }
+
+  .header-img {
+    display: none;
+  }
+  .nav-container {
+    flex-direction: column-reverse;
+  }
+
+  .image-container a {
+    margin-bottom: 10%;
+  }
+
+  .nav-container a {
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    text-align: center;
+  }
+
+  .button-container a {
+    margin-bottom: 25%;
+  }
+
+  section div {
+    margin-bottom: 5%;
+    margin-top: 10%;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+  }
+
+  .text-container div{
+    margin-bottom: 5%;
+  }
+}
 
 
